@@ -1,0 +1,77 @@
+{% extends "default.html" %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<!-- Start Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <p>Lovin Real Estate</p>
+  </div>
+  <div class="top-bar-right">
+    <p> <b>123-456-7890</b> </p>
+  </div>
+</div>
+<!-- End Top Bar -->
+
+<!-- Start div with background image -->
+<div style="background-color: #F1F0F0; height: 100%;">
+<!-- <div>
+  <h4 align="center">Get a fast, cash offer on <br> your house today!</h4>
+</div> -->
+  <div class="image" style="background-image: url({% static 'images/Riverfront.JPG' %})">
+    <p align="center">Some text over the background image</p>
+  </div>
+  <hr>
+  <!-- End div with background image -->
+  <div>
+    <p align="center">
+      We have purchased over 75,000 houses since 1996 and we buy houses in ANY condition. <br>
+      Avoid clever sales tactics and false promises from scam artists. These can lead to <br>
+      frustration and even disaster if their deal falls through and you’re left holding the bag. <br>
+      Call HomeVestors – the company that’s been trusted for years.
+    </p>
+  </div>
+  <hr>
+
+  <div class="row">
+    <p align="center">
+      People use “We Buy Ugly Houses®” for any number of reasons including:
+    </p>
+    <div class="large-offset-3 large-3 columns">
+      <ul>
+        <li>Structural issues</li>
+        <li>Facing foreclosure</li>
+        <li>Relocation or job transfer</li>
+        <li>Undesirable neighborhoods</li>
+        <li>Divorce</li>
+        <li>Need for cosmetic fix up</li>
+        <li>Retirement or downsizing</li>
+      </ul>
+    </div>
+
+    <div class="large-6 columns">
+      <ul>
+        <li>Death of a loved one</li>
+        <li>Liquidating assets to pay bills</li>
+        <li>Inheriting a property you can’t keep</li>
+        <li>Tired of living in an ugly house</li>
+        <li>Troublesome mortgage terms</li>
+        <li>Job loss</li>
+        <li>And more</li>
+      </ul>
+    </div>
+
+  </div>
+  <hr>
+
+
+</div>
+
+{% endblock %}
+
+{% block script %}
+{% endblock script %}

@@ -1,0 +1,71 @@
+div.top-bar{
+  background-color: white;
+  height: 110px;
+  width: 100%;
+  border: 2px solid #CACACA;
+  /*padding: 1rem;*/
+}
+div.top-bar-left{
+  position: absolute;
+  top:15px;
+  left:250px;
+  font-size: 50px;
+  font-style: oblique;
+  font-family: lucida;
+}
+div.top-bar-right{
+  position: absolute;
+  top:40px;
+  right:175px;
+  font-size: 25px;
+}
+div.image{
+  position: relative;
+  /*background-image: url('{% static 'images/Riverfront.JPG' %}');*/
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  /*background-size: cover;*/
+  height:600px;
+  /*width:100%;*/
+  /*margin: auto;*/
+  opacity: 1.0;
+  /*padding: 20%;*/
+}
+
+/*------------ USE THIS FOR THE RIVERFRONT PIC -------------*/
+/*div.Image{
+  position: relative;
+  left: 5%;
+  height: 100%;
+  width: 100%;
+}*/
+
+/*--------- USE THIS FOR THE RIVERCATS PIC -----------*/
+/*div.Image{
+  position: relative;
+  left: 10%;
+  width: 80%;
+}*/
+
+/*-------------------- CHANGE ALL "PX" NUMBER VALUES TO "%" --------------------*/
+
+
+/*div.bgImage{
+    background-image: url({% static 'images/rivercats.JPG' %});
+    width:500px;
+    height:500px;
+}*/
+
+/*div.bgImage{
+    background-image: white url({% static 'images/rivercats.JPG' %}) no-repeat;
+}*/
+/*pwd command while in the static/images folder that contains picture
+/Users/andrewryan/REsite/REsite/apps/static/images*/
+
+
+
+/*div.bgImage{
+background-image:url('{{ STATIC_URL }}images/rivercats.JPG');
+background-repeat:no-repeat;
+background-size:100%;
+}*/
