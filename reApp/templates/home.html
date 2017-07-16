@@ -19,11 +19,70 @@
 
 <!-- Start div with background image -->
 <div style="background-color: #F1F0F0; height: 100%;">
-<!-- <div>
-  <h4 align="center">Get a fast, cash offer on <br> your house today!</h4>
-</div> -->
+  <!-- use this to implement grid for image text
+  <div class="row">
+    <div class="large-offset-3 large-3 columns">
+    </div>
+
+    <div class="large-6 columns">
+    </div>
+  </div> -->
+
   <div class="image" style="background-image: url({% static 'images/Riverfront.JPG' %})">
-    <p align="center">Some text over the background image</p>
+    <p class="imageText" align="center">
+      Get a Fast, Cash Offer on <br>
+      Your House Today! <br>
+      Call 123-456-7890
+    </p>
+
+    <!-- for user input box http://foundation.zurb.com/building-blocks/blocks/translucent-form-overlay.html
+    <div class="translucent-form-overlay">
+      <form>
+        <h3>Search for Properties</h3>
+        <div class="row columns">
+          <label>Keyword
+            <input type="text" name="keyword" placeholder="Any">
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Property Status
+            <select name="status" type="text">
+              <option>Any</option>
+              <option value="rent">Rent</option>
+              <option value="buy">Buy</option>
+            </select>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Property Type
+            <select name="status" type="text">
+              <option>Any</option>
+              <option value="office">Office</option>
+              <option value="building">Building</option>
+            </select>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Location
+            <input type="text" name="location" placeholder="Any">
+          </label>
+        </div>
+        <div class="row">
+          <label class="columns small-12">Price</label>
+          <div class="columns small-6">
+            <input type="number" min="0" name="min" placeholder="Min">
+          </div>
+          <div class="columns small-6">
+            <input type="number" min="0" name="max" placeholder="Max">
+          </div>
+        </div>
+        <button type="button" class="primary button expanded search-button">
+          Search
+        </button>
+     </form>
+    </div> -->
+
+
   </div>
   <hr>
   <!-- End div with background image -->
@@ -39,7 +98,7 @@
 
   <div class="row">
     <p align="center">
-      People use “We Buy Ugly Houses®” for any number of reasons including:
+      People use Lovin Real Estate for any number of reasons including:
     </p>
     <div class="large-offset-3 large-3 columns">
       <ul>
@@ -67,6 +126,7 @@
 
   </div>
   <hr>
+  <p align="center"><font size="2"> &#169; 2017 Lovin Real Estate </p>
 
 
 </div>

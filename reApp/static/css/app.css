@@ -31,6 +31,10 @@ div.image{
   opacity: 1.0;
   /*padding: 20%;*/
 }
+p.imageText{
+  font-size: xx-large;
+  font-weight: bold;
+}
 
 /*------------ USE THIS FOR THE RIVERFRONT PIC -------------*/
 /*div.Image{
