@@ -32,7 +32,8 @@ div.image{
   /*padding: 20%;*/
 }
 p.imageText{
-  /*font-size: xx-large;*/
+  /*font-size: x-large;*/
+  line-height: 130%;
   font-size: 40px;
   font-weight: bold;
   font-family: lucida;
@@ -40,6 +41,7 @@ p.imageText{
 }
 p.imageNumber{
   /*font-size: xx-large;*/
+  line-height: 100%;
   font-size: 30px;
   font-weight: bold;
   font-family: lucida;
