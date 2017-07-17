@@ -32,9 +32,48 @@ div.image{
   /*padding: 20%;*/
 }
 p.imageText{
-  font-size: xx-large;
+  /*font-size: xx-large;*/
+  font-size: 40px;
   font-weight: bold;
+  font-family: lucida;
+  color: #2A2929;
 }
+p.imageNumber{
+  /*font-size: xx-large;*/
+  font-size: 30px;
+  font-weight: bold;
+  font-family: lucida;
+  color: #2A2929;
+}
+/*begin translucent-form-overlay css */
+.translucent-form-overlay {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 20px;
+  color: #fefefe;
+}
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+/*end translucent-form-overlay css*/
+
+
 
 /*------------ USE THIS FOR THE RIVERFRONT PIC -------------*/
 /*div.Image{
@@ -52,24 +91,3 @@ p.imageText{
 }*/
 
 /*-------------------- CHANGE ALL "PX" NUMBER VALUES TO "%" --------------------*/
-
-
-/*div.bgImage{
-    background-image: url({% static 'images/rivercats.JPG' %});
-    width:500px;
-    height:500px;
-}*/
-
-/*div.bgImage{
-    background-image: white url({% static 'images/rivercats.JPG' %}) no-repeat;
-}*/
-/*pwd command while in the static/images folder that contains picture
-/Users/andrewryan/REsite/REsite/apps/static/images*/
-
-
-
-/*div.bgImage{
-background-image:url('{{ STATIC_URL }}images/rivercats.JPG');
-background-repeat:no-repeat;
-background-size:100%;
-}*/
