@@ -14,12 +14,12 @@ from .models import *
 
 def index(request):
     context = {
-        'title':"Home",
+        'title':"Sell Your House Today!",
         }
     return render(request,'home.html',context)
 
-def home(request):
-    context = {
-        'title':'Home',
-    }
-    return render(request, 'home.html', context)
+# def home(request):
+#     context = {
+#         'title':'Home',
+#     }
+#     return render(request, 'home.html', context)

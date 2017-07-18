@@ -6,13 +6,15 @@
 {% endblock %}
 
 {% block content %}
-<!-- Start Top Bar -->
-<div class="top-bar">
-  <div class="top-bar-left">
-    <p>Lovin Real Estate</p>
-  </div>
-  <div class="top-bar-right">
-    <p> <b>(123) 456-7890</b> </p>
+<!-- Start Top Bar, sticky -->
+<div data-sticky-container>
+  <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+    <div class="top-bar-left">
+      <p>Lovin Real Estate</p>
+    </div>
+    <div class="top-bar-right">
+      <p> <b>(123) 456-7890</b> </p>
+    </div>
   </div>
 </div>
 <!-- End Top Bar -->
@@ -66,7 +68,7 @@
                 </div>
                 <div class="columns small-6">
                   <label>Zip Code
-                    <input type="number" name="zipCode" placeholder="">
+                    <input type="text" name="zipCode" placeholder="" max="5">
                   </label>
                 </div>
               <!-- </div> -->
@@ -89,7 +91,7 @@
       Avoid clever sales tactics and false promises from scam artists. These can lead to <br>
       frustration and even disaster if their deal falls through and you’re left holding the bag. <br>
       Call Lovin Real Estate – the company that’s been trusted for years. <br>
-      <br> <b> The consultation is always free, and there is no obligation. </b>
+      <br> <b> The consultation is free, and there is no obligation. </b>
     </p>
   </div>
   <hr>
@@ -125,7 +127,6 @@
   </div>
   <hr>
   <p align="center"><font size="2"> &#169; 2017 Lovin Real Estate </p>
-
 
 </div>
 
