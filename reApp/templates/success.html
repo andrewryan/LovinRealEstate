@@ -1,0 +1,43 @@
+{% extends "default.html" %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<!-- Start Top Bar, sticky -->
+<div data-sticky-container>
+  <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+    <div class="top-bar-left">
+      <p> <a class="linkColor" href="/#/"> Lovin Real Estate </a> </p>
+    </div>
+    <div class="top-bar-right">
+      <p> <b>(123) 456-7890</b> </p>
+    </div>
+  </div>
+</div>
+<!-- End Top Bar -->
+
+<!-- Start div with background image -->
+<div style="background-color: #F1F0F0; height: 100%;">
+  <div class="image" style="background-image: url({% static 'images/Riverfront.JPG' %})">
+    <br>
+    <h2 align="center"> <b> Thank you! </b> </h2>
+      <br>
+      <br>
+    <h4 align="center">
+      Your email was sent and I will get back
+      <br> to you as soon as I can.
+    </h4>
+  </div>
+  <!-- End div with background image -->
+
+  <hr>
+  <p align="center"><font size="2"> &#169; 2017 Lovin Real Estate </p>
+
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock script %}

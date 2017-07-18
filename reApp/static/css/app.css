@@ -13,6 +13,9 @@ div.top-bar-left{
   font-style: oblique;
   font-family: lucida;
 }
+a.linkColor{
+  color: #000000;
+}
 div.top-bar-right{
   position: absolute;
   top:30px;
