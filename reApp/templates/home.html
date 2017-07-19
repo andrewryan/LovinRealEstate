@@ -37,45 +37,60 @@
       <!-- Begin translucent-form-overlay -->
       <div class="large-4 columns">
         <div class="translucent-form-overlay">
-          <form>
+          <form method="post">
+            {% csrf_token %}
             <h3> Get a Free Consultation </h3>
             <div class="row columns">
-              <label>Full Name
+              <!-- <label>Full Name
                 <input type="text" name="keyword" placeholder="">
-              </label>
+              </label> -->
+              <label>{{ form.name.label_tag }}</label>
+                {{ form.name }}
             </div>
             <div class="row columns">
-              <label>Email
+              <!-- <label>Email
                 <input type="text" name="email" placeholder="">
-              </label>
+              </label> -->
+              <label>{{ form.email.label_tag }}</label>
+                {{ form.email }}
             </div>
             <div class="row columns">
-              <label>Phone Number
+              <!-- <label>Phone Number
                 <input name="phoneNumber" type="text">
-              </label>
+              </label> -->
+              <label>{{ form.phoneNumber.label_tag }}</label>
+                {{ form.phoneNumber }}
             </div>
             <div class="row columns">
-              <label>Address
+              <!-- <label>Address
                 <input type="text" name="address" placeholder="">
-              </label>
+              </label> -->
+              <label>{{ form.address.label_tag }}</label>
+                {{ form.address }}
             </div>
             <div class="row">
               <!-- <div class="columns small-12"> -->
                 <div class="columns small-6">
-                  <label>City
+                  <!-- <label>City
                     <input type="text" name="city" placeholder="">
-                  </label>
+                  </label> -->
+                  <label>{{ form.city.label_tag }}</label>
+                    {{ form.city }}
                 </div>
                 <div class="columns small-6">
-                  <label>Zip Code
+                  <!-- <label>Zip Code
                     <input type="text" name="zipCode" placeholder="" max="5">
-                  </label>
+                  </label> -->
+                  <label>{{ form.zipCode.label_tag }}</label>
+                    {{ form.zipCode }}
                 </div>
               <!-- </div> -->
             </div>
-            <button type="button" class="primary button expanded search-button">
-              <b> Get a No-Risk Offer Now </b>
-            </button>
+            <div class="form-actions">
+              <button type="submit" class="primary button expanded search-button">
+                <b> Get a No-Risk Offer Now </b>
+              </button>
+            </div>
          </form>
         </div>
       </div>
@@ -85,6 +100,7 @@
   </div>
   <hr>
   <!-- End div with background image -->
+
   <div>
     <p align="center">
       We have purchased over 75,000 houses since 1996 and we buy houses in ANY condition. <br>
@@ -130,13 +146,19 @@
 
 </div>
 
+<!-- For testing purposes
 <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    <label>{{ form.email.label_tag }}</label>
+      {{ form.email }}
+    <label>{{ form.subject.label_tag }}</label>
+      {{ form.subject }}
+    <label>{{ form.message.label_tag }}</label>
+      {{ form.message }}
     <div class="form-actions">
       <button type="submit">Send</button>
     </div>
-</form>
+</form> -->
 
 {% endblock %}
 
