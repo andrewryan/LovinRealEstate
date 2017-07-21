@@ -41,46 +41,28 @@
             {% csrf_token %}
             <h3> Get a Free Consultation </h3>
             <div class="row columns">
-              <!-- <label>Full Name
-                <input type="text" name="keyword" placeholder="">
-              </label> -->
               <label>{{ form.name.label_tag }}</label>
                 {{ form.name }}
             </div>
             <div class="row columns">
-              <!-- <label>Email
-                <input type="text" name="email" placeholder="">
-              </label> -->
               <label>{{ form.email.label_tag }}</label>
                 {{ form.email }}
             </div>
             <div class="row columns">
-              <!-- <label>Phone Number
-                <input name="phoneNumber" type="text">
-              </label> -->
               <label>{{ form.phoneNumber.label_tag }}</label>
                 {{ form.phoneNumber }}
             </div>
             <div class="row columns">
-              <!-- <label>Address
-                <input type="text" name="address" placeholder="">
-              </label> -->
               <label>{{ form.address.label_tag }}</label>
                 {{ form.address }}
             </div>
             <div class="row">
               <!-- <div class="columns small-12"> -->
                 <div class="columns small-6">
-                  <!-- <label>City
-                    <input type="text" name="city" placeholder="">
-                  </label> -->
                   <label>{{ form.city.label_tag }}</label>
                     {{ form.city }}
                 </div>
                 <div class="columns small-6">
-                  <!-- <label>Zip Code
-                    <input type="text" name="zipCode" placeholder="" max="5">
-                  </label> -->
                   <label>{{ form.zipCode.label_tag }}</label>
                     {{ form.zipCode }}
                 </div>
@@ -101,9 +83,24 @@
   <hr>
   <!-- End div with background image -->
 
+  <!-- Begin lower page text areas -->
+  <div>
+    <h4 align="center">
+      <b> Don’t fix it. Sell it. We buy houses in ANY condition. <br>
+      Skip the repairs and get CASH fast! </b> <br>
+    </h4>
+    <p align="center">
+      <br>
+      <b> Selling Your House is Easy Our process is simple. </b> <br>
+      We’ll meet with you to understand your specific situation. <br>
+      Then, we’ll walk you through our simple house buying process from start to finish. <br>
+    </p>
+  </div>
+  <hr>
+
   <div>
     <p align="center">
-      We have purchased over 75,000 houses since 1996 and we buy houses in ANY condition. <br>
+      We purchase homes in the greater Sacramento area and we buy houses in ANY condition. <br>
       Avoid clever sales tactics and false promises from scam artists. These can lead to <br>
       frustration and even disaster if their deal falls through and you’re left holding the bag. <br>
       Call Lovin Real Estate – the company that’s been trusted for years. <br>
@@ -141,24 +138,12 @@
     </div>
 
   </div>
+  <!-- End lower page text areas -->
+
   <hr>
   <p align="center"><font size="2"> &#169; 2017 Lovin Real Estate </p>
 
 </div>
-
-<!-- For testing purposes
-<form method="post">
-    {% csrf_token %}
-    <label>{{ form.email.label_tag }}</label>
-      {{ form.email }}
-    <label>{{ form.subject.label_tag }}</label>
-      {{ form.subject }}
-    <label>{{ form.message.label_tag }}</label>
-      {{ form.message }}
-    <div class="form-actions">
-      <button type="submit">Send</button>
-    </div>
-</form> -->
 
 {% endblock %}
 
