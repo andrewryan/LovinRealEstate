@@ -1,15 +1,13 @@
+/*Start top bar CSS*/
 div.top-bar{
+  position: relative;
   background-color: white;
   height: 100px;
-  width: 100%;
   border: 2px solid #CACACA;
-  /*padding: 1rem;*/
 }
 div.top-bar-left{
-  position: absolute;
-  top:10px;
-  left:250px;
-  font-size: 50px;
+  position: relative;
+  top:15%;
   font-style: oblique;
   font-family: lucida;
 }
@@ -17,11 +15,19 @@ a.linkColor{
   color: #000000;
 }
 div.top-bar-right{
-  position: absolute;
-  top:30px;
-  right:175px;
-  font-size: 25px;
+  position: relative;
+  top:28%;
 }
+h1.leftheadertext{
+  font-style: oblique;
+  font-family: lucida;
+}
+h4.rightheadertext{
+  font-weight: bold;
+}
+/*End top bar CSS*/
+
+/*Start main body background CSS*/
 div.image{
   position: relative;
   /*background-image: url('{% static 'images/Riverfront.JPG' %}');*/
@@ -50,7 +56,7 @@ p.imageNumber{
   font-family: lucida;
   color: #2A2929;
 }
-/*begin translucent-form-overlay css */
+/*Start translucent-form-overlay css */
 .translucent-form-overlay {
   max-width: 500px;
   width: 100%;
@@ -76,7 +82,9 @@ p.imageNumber{
 .translucent-form-overlay input::placeholder {
   color: #8a8a8a;
 }
-/*end translucent-form-overlay css*/
+/*End translucent-form-overlay css*/
+
+/*End main body background CSS*/
 
 
 
