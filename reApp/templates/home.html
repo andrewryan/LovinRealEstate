@@ -25,19 +25,17 @@
   <div class="image" style="background-image: url({% static 'images/Riverfront.jpg' %})">
     <br>
     <div class="row">
-      <div class="large-offset-3 large-5 columns">
+      <div class="medium-5 large-offset-3 large-5 columns">
         <p class="imageText" align="center">
           Get a Fast, No-Risk Offer on
-          Your House Today!
-          <p class="imageNumber" align="center">
-            Call (123) 456-7890
-          </p>
+          Your House Today! <br>
+          <span class="imageNumber hide-for-medium-only">Call (123) 456-7890</span>
         </p>
       </div>
 
-      <!-- Start translucent-form-overlay -->
-      <div class="large-4 columns">
-        <div class="translucent-form-overlay">
+      <!-- Start medium/large screen translucent-form-overlay -->
+      <div class="medium-7 large-4 columns ">
+        <div class="translucent-form-overlay hide-for-small-only">
           <form method="post">
             {% csrf_token %}
             <h3> Get a Free Consultation </h3>
@@ -58,7 +56,6 @@
                 {{ form.address }}
             </div>
             <div class="row">
-              <!-- <div class="columns small-12"> -->
                 <div class="columns small-6">
                   <label>{{ form.city.label_tag }}</label>
                     {{ form.city }}
@@ -67,7 +64,6 @@
                   <label>{{ form.zipCode.label_tag }}</label>
                     {{ form.zipCode }}
                 </div>
-              <!-- </div> -->
             </div>
             <div class="form-actions">
               <button type="submit" class="primary button expanded search-button">
@@ -77,12 +73,55 @@
          </form>
         </div>
       </div>
-      <!-- End translucent-form-overlay -->
-
+      <!-- End medium/large screen translucent-form-overlay -->
     </div>
   </div>
-  <hr>
   <!-- End div with background image -->
+  <hr>
+
+  <!-- Start small screen translucent-form-overlay -->
+  <div class="large-4 columns ">
+    <div class="translucent-form-overlay show-for-small-only">
+      <form method="post">
+        {% csrf_token %}
+        <h3> Get a Free Consultation </h3>
+        <div class="row columns">
+          <label>{{ form.name.label_tag }}</label>
+            {{ form.name }}
+        </div>
+        <div class="row columns">
+          <label>{{ form.email.label_tag }}</label>
+            {{ form.email }}
+        </div>
+        <div class="row columns">
+          <label>{{ form.phoneNumber.label_tag }}</label>
+            {{ form.phoneNumber }}
+        </div>
+        <div class="row columns">
+          <label>{{ form.address.label_tag }}</label>
+            {{ form.address }}
+        </div>
+        <div class="row">
+            <div class="columns small-6">
+              <label>{{ form.city.label_tag }}</label>
+                {{ form.city }}
+            </div>
+            <div class="columns small-6">
+              <label>{{ form.zipCode.label_tag }}</label>
+                {{ form.zipCode }}
+            </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="primary button expanded search-button">
+            <b> Get a No-Risk Offer Now </b>
+          </button>
+        </div>
+     </form>
+    </div>
+    <br>
+  </div>
+  <hr>
+  <!-- End small screen translucent-form-overlay -->
 
   <!-- Start lower page text areas -->
   <div>

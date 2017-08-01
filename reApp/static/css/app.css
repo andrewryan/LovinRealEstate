@@ -1,6 +1,6 @@
 /*Start top bar CSS*/
 div.top-bar{
-  position: relative;
+  position: static;
   background-color: white;
   height: 100px;
   border: 2px solid #CACACA;
@@ -27,35 +27,31 @@ h4.rightheadertext{
 }
 /*End top bar CSS*/
 
+
 /*Start main body background CSS*/
 div.image{
   position: relative;
-  /*background-image: url('{% static 'images/Riverfront.JPG' %}');*/
   background-repeat:no-repeat;
   background-size: 100% 100%;
-  /*background-size: cover;*/
   height:600px;
-  /*width:100%;*/
-  /*margin: auto;*/
   opacity: 1.0;
-  /*padding: 20%;*/
 }
 p.imageText{
-  /*font-size: x-large;*/
-  line-height: 130%;
+  line-height: 120%;
   font-size: 40px;
   font-weight: bold;
   font-family: lucida;
   color: #2A2929;
 }
-p.imageNumber{
-  /*font-size: xx-large;*/
-  line-height: 100%;
+span.imageNumber{
   font-size: 30px;
   font-weight: bold;
   font-family: lucida;
   color: #2A2929;
 }
+/*End main body background CSS*/
+
+
 /*Start translucent-form-overlay css */
 .translucent-form-overlay {
   max-width: 500px;
@@ -83,8 +79,6 @@ p.imageNumber{
   color: #8a8a8a;
 }
 /*End translucent-form-overlay css*/
-
-/*End main body background CSS*/
 
 
 
