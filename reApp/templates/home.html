@@ -14,7 +14,7 @@
       <h1 align="center" class="leftheadertext">Lovin Real Estate</h1>
     </div>
     <div class="top-bar-right large-offset-3 large-1 columns end">
-      <h4 align="center" class="rightheadertext"> (123) 456-7890 </h4>
+      <h4 align="center" class="rightheadertext"> (916) 258-5597 </h4>
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@
         <p class="imageText" align="center">
           Get a Fast, No-Risk Offer on
           Your House Today! <br>
-          <span class="imageNumber hide-for-medium-only">Call (123) 456-7890</span>
+          <span class="imageNumber hide-for-medium-only">Call (916) 258-5597</span>
         </p>
       </div>
 
@@ -38,7 +38,7 @@
         <div class="translucent-form-overlay hide-for-small-only">
           <form method="post">
             {% csrf_token %}
-            <h3> Get a Free Consultation </h3>
+            <h3 align="center"> Get a Free Consultation </h3>
             <div class="row columns">
               <label>{{ form.name.label_tag }}</label>
                 {{ form.name }}
@@ -77,14 +77,15 @@
     </div>
   </div>
   <!-- End div with background image -->
-  <hr>
+
 
   <!-- Start small screen translucent-form-overlay -->
   <div class="large-4 columns ">
+    <hr class="show-for-small-only">
     <div class="translucent-form-overlay show-for-small-only">
       <form method="post">
         {% csrf_token %}
-        <h3> Get a Free Consultation </h3>
+        <h3 align="center"> Get a Free Consultation </h3>
         <div class="row columns">
           <label>{{ form.name.label_tag }}</label>
             {{ form.name }}
@@ -126,24 +127,33 @@
   <!-- Start lower page text areas -->
   <div>
     <h4 align="center">
-      <b> Don’t fix it. Sell it. We buy houses in ANY condition. <br>
-      Skip the repairs and get CASH fast! </b> <br>
+      <b> Selling Your House Is Easy. Our process is simple and hassle free: </b> <br>
     </h4>
-    <p align="center">
+    <!-- Used to align this paragraph to the left on a large and up screen size -->
+    <p class="show-for-large largeStepAlignment">
       <br>
-      <b> Selling Your House is Easy Our process is simple. </b> <br>
-      We’ll meet with you to understand your specific situation. <br>
-      Then, we’ll walk you through our simple house buying process from start to finish. <br>
+      <b> <u>Step 1</u> </b> &#8211; We’ll meet with you to learn about you and your specific situation. <br>
+      <b> <u>Step 2</u> </b> &#8211; We’ll make you an As-Is ALL CASH offer. <br>
+      <b> <u>Step 3</u> </b> &#8211; If you accept the offer, we pay ALL closing costs and close on the date
+        of your choice. <br>
+    </p>
+    <!-- Used to center align paragraph on anything smaller than a large and up screen size -->
+    <p class="hide-for-large stepAlignment">
+      <br>
+      <b> <u>Step 1</u> </b> &#8211; We’ll meet with you to learn about you and your specific situation. <br>
+      <b> <u>Step 2</u> </b> &#8211; We’ll make you an As-Is ALL CASH offer. <br>
+      <b> <u>Step 3</u> </b> &#8211; If you accept the offer, we pay ALL closing costs and close on the date
+        of your choice. <br>
     </p>
   </div>
   <hr>
 
   <div>
     <p align="center">
-      We purchase homes in the greater Sacramento area and we buy houses in ANY condition. <br>
-      Avoid clever sales tactics and false promises from scam artists. These can lead to <br>
-      frustration and even disaster if their deal falls through and you’re left holding the bag. <br>
-      Call Lovin Real Estate – the company that’s been trusted for years. <br>
+      We purchase houses in the greater Sacramento area and we buy houses in <b>ANY</b>
+      condition and <b>ANY</b> price range. <br>
+      No matter how bad you think your situation is, you are not alone. Help is only a phone call away. <br>
+      Call Lovin Real Estate to sell your house quickly, discreetly, and hassle free. <br>
       <br> <b> The consultation is free, and there is no obligation. </b>
     </p>
   </div>
