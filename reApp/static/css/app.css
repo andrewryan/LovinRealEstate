@@ -2,7 +2,7 @@
 div.top-bar{
   position: static;
   background-color: white;
-  height: 100px;
+  height: 90px;
   border: 2px solid #CACACA;
 }
 div.top-bar-left{
@@ -17,6 +17,7 @@ a.linkColor{
 div.top-bar-right{
   position: relative;
   top:28%;
+  padding-bottom: 20px;
 }
 h1.leftheadertext{
   font-style: oblique;
