@@ -49,17 +49,14 @@ span.imageNumber{
   font-family: lucida;
   color: #2A2929;
 }
+.bodyPadding{
+  padding: 0px 10px 0px 10px;
+}
 p.largeStepAlignment{
-  /*position: relative;
-  left: 18.75%;*/
-  padding-left: 19%;
-  /*left: 238px;*/
+  padding-left: 18.5%;
 }
 p.stepAlignment{
-  /*position: relative;
-  left: 18.75%;*/
   padding-left: 5%;
-  /*left: 238px;*/
 }
 /*End main body background CSS*/
 
@@ -91,22 +88,3 @@ p.stepAlignment{
   color: #8a8a8a;
 }
 /*End translucent-form-overlay css*/
-
-
-
-/*------------ USE THIS FOR THE RIVERFRONT PIC -------------*/
-/*div.Image{
-  position: relative;
-  left: 5%;
-  height: 100%;
-  width: 100%;
-}*/
-
-/*--------- USE THIS FOR THE RIVERCATS PIC -----------*/
-/*div.Image{
-  position: relative;
-  left: 10%;
-  width: 80%;
-}*/
-
-/*-------------------- CHANGE ALL "PX" NUMBER VALUES TO "%" --------------------*/
