@@ -7,9 +7,10 @@ div.top-bar{
 }
 div.top-bar-left{
   position: relative;
-  top:15%;
+  top:10%;
   font-style: oblique;
   font-family: lucida;
+  font-size: 40px;
 }
 a.linkColor{
   color: #000000;
@@ -18,10 +19,6 @@ div.top-bar-right{
   position: relative;
   top:28%;
   padding-bottom: 20px;
-}
-h1.leftheadertext{
-  font-style: oblique;
-  font-family: lucida;
 }
 h4.rightheadertext{
   font-weight: bold;
