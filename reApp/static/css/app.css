@@ -7,10 +7,10 @@ div.top-bar{
 }
 div.top-bar-left{
   position: relative;
-  top: 2%;
+  top: 5%;
   font-style: oblique;
   font-family: lucida;
-  font-size: 45px;
+  font-size: 40px;
 }
 a.linkColor{
   color: #000000;
